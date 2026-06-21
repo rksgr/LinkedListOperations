@@ -16,6 +16,12 @@ public class InsertOperationsLinkedList {
         linkdList.setHeadNode(newNode);
     }
 
+    private static void insertElementAtEnd(LinkdList linkdList, String elem){
+        Node newNode = new Node(elem,null);
+        Node tailNode = linkdList.getTailNode();
+        tailNode.setNextNode(newNode);
+        linkdList.setTailNode(newNode);
+    }
     public static void main(String[] args) {
         LinkdList<String> linkdList = createLinkedList();
         insertElementAtBeginning(linkdList, "Calcuttiya");
