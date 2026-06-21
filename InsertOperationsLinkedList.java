@@ -22,6 +22,11 @@ public class InsertOperationsLinkedList {
         tailNode.setNextNode(newNode);
         linkdList.setTailNode(newNode);
     }
+    private static void insertElementIntermediate(LinkdList linkdList, String elem, String pos){
+//        / insert element at position where
+        Node newNode = new Node(elem,null);
+
+    }
     public static void main(String[] args) {
         LinkdList<String> linkdList = createLinkedList();
         insertElementAtBeginning(linkdList, "Calcuttiya");
